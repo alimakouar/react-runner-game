@@ -1,0 +1,59 @@
+@keyframes shake {
+    0% { transform: translate(7px, 0px)}
+    50% { transform: translate(-7px, 0px)}
+    100% { transform: translate(7px, 0px)}
+  }
+
+.square {
+    display: inline-block;
+    width: 45px;
+    height: 100%;
+    margin: 0px;
+    /* border: 1px solid black; */
+}
+
+.line{
+    margin: 0px;
+    height: 45px;
+}
+
+.line{
+    background-color: #393E46;
+}
+
+.player1Square {
+    background-image: url("player1.gif");
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.player2Square {
+    background-image: url("player2.gif");
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.enemySquare {
+    background-image: url("paper.png");
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.wallSquare {
+    background-image: url("brick.png");
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+}
